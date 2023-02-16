@@ -1,4 +1,3 @@
-![example workflow](https://github.com/zenkifi/zenkipay-api-sdk-python/actions/workflows/maven.yml/badge.svg)
 # Zenkipay API SDK for Python
 Definition of technical specification of the product; Zenkipay is a gateway
 cryptocurrency payment system that allows merchant's to receive payments on their
