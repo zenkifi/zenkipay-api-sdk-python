@@ -181,7 +181,7 @@ class Refund(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[dict, frozendict.frozendict, ],
+                    *_args: typing.Union[dict, frozendict.frozendict, ],
                     amount: typing.Union[MetaOapg.properties.amount, decimal.Decimal, int, float, ],
                     currency: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
                     currencyCodeIso3: typing.Union[MetaOapg.properties.currencyCodeIso3, str, schemas.Unset] = schemas.unset,
@@ -190,7 +190,7 @@ class Refund(
                 ) -> 'fiatOriginalPayment':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         amount=amount,
                         currency=currency,
                         currencyCodeIso3=currencyCodeIso3,
@@ -267,7 +267,7 @@ class Refund(
 
     def __new__(
         cls,
-        *args: typing.Union[dict, frozendict.frozendict, ],
+        *_args: typing.Union[dict, frozendict.frozendict, ],
         reason: typing.Union[MetaOapg.properties.reason, str, ],
         amount: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
         currency: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
@@ -281,7 +281,7 @@ class Refund(
     ) -> 'Refund':
         return super().__new__(
             cls,
-            *args,
+            *_args,
             reason=reason,
             amount=amount,
             currency=currency,

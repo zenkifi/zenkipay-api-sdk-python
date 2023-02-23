@@ -87,12 +87,12 @@ class CryptoPayment(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[None, str, ],
+                    *_args: typing.Union[None, str, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                 ) -> 'transactionHash':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                     )
             
@@ -111,12 +111,12 @@ class CryptoPayment(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[None, str, ],
+                    *_args: typing.Union[None, str, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                 ) -> 'networkScanUrl':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                     )
             
@@ -231,7 +231,7 @@ class CryptoPayment(
 
     def __new__(
         cls,
-        *args: typing.Union[dict, frozendict.frozendict, ],
+        *_args: typing.Union[dict, frozendict.frozendict, ],
         amount: typing.Union[MetaOapg.properties.amount, str, ],
         blockchain: typing.Union[MetaOapg.properties.blockchain, str, ],
         currency: typing.Union[MetaOapg.properties.currency, str, ],
@@ -243,7 +243,7 @@ class CryptoPayment(
     ) -> 'CryptoPayment':
         return super().__new__(
             cls,
-            *args,
+            *_args,
             amount=amount,
             blockchain=blockchain,
             currency=currency,

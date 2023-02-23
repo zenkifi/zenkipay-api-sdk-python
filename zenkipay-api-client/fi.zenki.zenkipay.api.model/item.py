@@ -98,12 +98,12 @@ class Item(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[None, str, ],
+                    *_args: typing.Union[None, str, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                 ) -> 'description':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                     )
             
@@ -143,12 +143,12 @@ class Item(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[None, str, ],
+                    *_args: typing.Union[None, str, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                 ) -> 'thumbnailUrl':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                     )
             
@@ -174,13 +174,13 @@ class Item(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[dict, frozendict.frozendict, None, ],
+                    *_args: typing.Union[dict, frozendict.frozendict, None, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                     **kwargs: typing.Union[MetaOapg.additional_properties, str, ],
                 ) -> 'metadata':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                         **kwargs,
                     )
@@ -264,7 +264,7 @@ class Item(
 
     def __new__(
         cls,
-        *args: typing.Union[dict, frozendict.frozendict, ],
+        *_args: typing.Union[dict, frozendict.frozendict, ],
         unitPrice: typing.Union[MetaOapg.properties.unitPrice, decimal.Decimal, int, float, ],
         quantity: typing.Union[MetaOapg.properties.quantity, decimal.Decimal, int, ],
         name: typing.Union[MetaOapg.properties.name, str, ],
@@ -278,7 +278,7 @@ class Item(
     ) -> 'Item':
         return super().__new__(
             cls,
-            *args,
+            *_args,
             unitPrice=unitPrice,
             quantity=quantity,
             name=name,

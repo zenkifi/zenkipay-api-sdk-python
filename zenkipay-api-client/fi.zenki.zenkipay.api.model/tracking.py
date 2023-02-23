@@ -87,12 +87,12 @@ class Tracking(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[None, str, ],
+                    *_args: typing.Union[None, str, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                 ) -> 'trackingId':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                     )
             
@@ -111,12 +111,12 @@ class Tracking(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[None, str, ],
+                    *_args: typing.Union[None, str, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                 ) -> 'courierName':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                     )
             
@@ -167,12 +167,12 @@ class Tracking(
                         
                             def __new__(
                                 cls,
-                                *args: typing.Union[None, str, ],
+                                *_args: typing.Union[None, str, ],
                                 _configuration: typing.Optional[schemas.Configuration] = None,
                             ) -> 'url':
                                 return super().__new__(
                                     cls,
-                                    *args,
+                                    *_args,
                                     _configuration=_configuration,
                                 )
                         
@@ -191,12 +191,12 @@ class Tracking(
                         
                             def __new__(
                                 cls,
-                                *args: typing.Union[None, str, ],
+                                *_args: typing.Union[None, str, ],
                                 _configuration: typing.Optional[schemas.Configuration] = None,
                             ) -> 'name':
                                 return super().__new__(
                                     cls,
-                                    *args,
+                                    *_args,
                                     _configuration=_configuration,
                                 )
                         
@@ -215,12 +215,12 @@ class Tracking(
                         
                             def __new__(
                                 cls,
-                                *args: typing.Union[None, str, ],
+                                *_args: typing.Union[None, str, ],
                                 _configuration: typing.Optional[schemas.Configuration] = None,
                             ) -> 'nameZhCn':
                                 return super().__new__(
                                     cls,
-                                    *args,
+                                    *_args,
                                     _configuration=_configuration,
                                 )
                         
@@ -239,12 +239,12 @@ class Tracking(
                         
                             def __new__(
                                 cls,
-                                *args: typing.Union[None, str, ],
+                                *_args: typing.Union[None, str, ],
                                 _configuration: typing.Optional[schemas.Configuration] = None,
                             ) -> 'nameZhHk':
                                 return super().__new__(
                                     cls,
-                                    *args,
+                                    *_args,
                                     _configuration=_configuration,
                                 )
                         __annotations__ = {
@@ -312,7 +312,7 @@ class Tracking(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[dict, frozendict.frozendict, ],
+                    *_args: typing.Union[dict, frozendict.frozendict, ],
                     countryCodeIso2: typing.Union[MetaOapg.properties.countryCodeIso2, str, ],
                     key: typing.Union[MetaOapg.properties.key, str, ],
                     url: typing.Union[MetaOapg.properties.url, None, str, schemas.Unset] = schemas.unset,
@@ -324,7 +324,7 @@ class Tracking(
                 ) -> 'externalCourier':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         countryCodeIso2=countryCodeIso2,
                         key=key,
                         url=url,
@@ -392,7 +392,7 @@ class Tracking(
 
     def __new__(
         cls,
-        *args: typing.Union[dict, frozendict.frozendict, ],
+        *_args: typing.Union[dict, frozendict.frozendict, ],
         zenkiTrackingId: typing.Union[MetaOapg.properties.zenkiTrackingId, str, ],
         courierType: typing.Union[MetaOapg.properties.courierType, str, ],
         trackingId: typing.Union[MetaOapg.properties.trackingId, None, str, schemas.Unset] = schemas.unset,
@@ -403,7 +403,7 @@ class Tracking(
     ) -> 'Tracking':
         return super().__new__(
             cls,
-            *args,
+            *_args,
             zenkiTrackingId=zenkiTrackingId,
             courierType=courierType,
             trackingId=trackingId,

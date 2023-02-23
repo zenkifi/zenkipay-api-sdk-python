@@ -141,7 +141,7 @@ class AddTrackingEvent(
 
     def __new__(
         cls,
-        *args: typing.Union[dict, frozendict.frozendict, ],
+        *_args: typing.Union[dict, frozendict.frozendict, ],
         description: typing.Union[MetaOapg.properties.description, str, ],
         location: typing.Union[MetaOapg.properties.location, str, ],
         status: typing.Union[MetaOapg.properties.status, str, ],
@@ -150,7 +150,7 @@ class AddTrackingEvent(
     ) -> 'AddTrackingEvent':
         return super().__new__(
             cls,
-            *args,
+            *_args,
             description=description,
             location=location,
             status=status,

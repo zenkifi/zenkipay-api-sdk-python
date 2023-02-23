@@ -104,7 +104,7 @@ class TokenOAuth2(
 
     def __new__(
         cls,
-        *args: typing.Union[dict, frozendict.frozendict, ],
+        *_args: typing.Union[dict, frozendict.frozendict, ],
         expiresIn: typing.Union[MetaOapg.properties.expiresIn, decimal.Decimal, int, ],
         scope: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
         accessToken: typing.Union[MetaOapg.properties.accessToken, str, ],
@@ -116,7 +116,7 @@ class TokenOAuth2(
     ) -> 'TokenOAuth2':
         return super().__new__(
             cls,
-            *args,
+            *_args,
             expiresIn=expiresIn,
             scope=scope,
             accessToken=accessToken,

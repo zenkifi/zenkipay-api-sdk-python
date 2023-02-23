@@ -122,7 +122,7 @@ class AddTracking(
 
     def __new__(
         cls,
-        *args: typing.Union[dict, frozendict.frozendict, ],
+        *_args: typing.Union[dict, frozendict.frozendict, ],
         courierType: typing.Union[MetaOapg.properties.courierType, str, ],
         trackingId: typing.Union[MetaOapg.properties.trackingId, str, schemas.Unset] = schemas.unset,
         courierName: typing.Union[MetaOapg.properties.courierName, str, schemas.Unset] = schemas.unset,
@@ -131,7 +131,7 @@ class AddTracking(
     ) -> 'AddTracking':
         return super().__new__(
             cls,
-            *args,
+            *_args,
             courierType=courierType,
             trackingId=trackingId,
             courierName=courierName,

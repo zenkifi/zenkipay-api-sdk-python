@@ -114,7 +114,7 @@ class RequestTokenOAuth2(
 
     def __new__(
         cls,
-        *args: typing.Union[dict, frozendict.frozendict, ],
+        *_args: typing.Union[dict, frozendict.frozendict, ],
         clientId: typing.Union[MetaOapg.properties.clientId, str, ],
         clientSecret: typing.Union[MetaOapg.properties.clientSecret, str, ],
         grantType: typing.Union[MetaOapg.properties.grantType, str, ],
@@ -123,7 +123,7 @@ class RequestTokenOAuth2(
     ) -> 'RequestTokenOAuth2':
         return super().__new__(
             cls,
-            *args,
+            *_args,
             clientId=clientId,
             clientSecret=clientSecret,
             grantType=grantType,

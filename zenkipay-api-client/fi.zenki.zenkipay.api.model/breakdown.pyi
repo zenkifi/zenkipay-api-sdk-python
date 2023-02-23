@@ -100,12 +100,12 @@ class Breakdown(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[None, decimal.Decimal, int, float, ],
+                    *_args: typing.Union[None, decimal.Decimal, int, float, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                 ) -> 'localTaxes_amount':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                     )
             
@@ -125,12 +125,12 @@ class Breakdown(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[None, decimal.Decimal, int, float, ],
+                    *_args: typing.Union[None, decimal.Decimal, int, float, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                 ) -> 'importCosts':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                     )
             
@@ -150,12 +150,12 @@ class Breakdown(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[None, decimal.Decimal, int, float, ],
+                    *_args: typing.Union[None, decimal.Decimal, int, float, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                 ) -> 'discountAmount':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                     )
             
@@ -181,13 +181,13 @@ class Breakdown(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[dict, frozendict.frozendict, None, ],
+                    *_args: typing.Union[dict, frozendict.frozendict, None, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                     **kwargs: typing.Union[MetaOapg.additional_properties, str, ],
                 ) -> 'additionalCharges':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                         **kwargs,
                     )
@@ -288,7 +288,7 @@ class Breakdown(
 
     def __new__(
         cls,
-        *args: typing.Union[dict, frozendict.frozendict, ],
+        *_args: typing.Union[dict, frozendict.frozendict, ],
         grandTotalAmount: typing.Union[MetaOapg.properties.grandTotalAmount, decimal.Decimal, int, float, ],
         totalItemsAmount: typing.Union[MetaOapg.properties.totalItemsAmount, decimal.Decimal, int, float, ],
         taxesAmount: typing.Union[MetaOapg.properties.taxesAmount, decimal.Decimal, int, float, ],
@@ -304,7 +304,7 @@ class Breakdown(
     ) -> 'Breakdown':
         return super().__new__(
             cls,
-            *args,
+            *_args,
             grandTotalAmount=grandTotalAmount,
             totalItemsAmount=totalItemsAmount,
             taxesAmount=taxesAmount,

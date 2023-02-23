@@ -96,7 +96,7 @@ class AuthenticationErrorResponse(
 
     def __new__(
         cls,
-        *args: typing.Union[dict, frozendict.frozendict, ],
+        *_args: typing.Union[dict, frozendict.frozendict, ],
         errorDescription: typing.Union[MetaOapg.properties.errorDescription, str, ],
         error: typing.Union[MetaOapg.properties.error, str, ],
         _configuration: typing.Optional[schemas.Configuration] = None,
@@ -104,7 +104,7 @@ class AuthenticationErrorResponse(
     ) -> 'AuthenticationErrorResponse':
         return super().__new__(
             cls,
-            *args,
+            *_args,
             errorDescription=errorDescription,
             error=error,
             _configuration=_configuration,

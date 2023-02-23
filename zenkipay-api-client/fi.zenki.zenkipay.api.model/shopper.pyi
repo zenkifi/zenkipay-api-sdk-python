@@ -66,12 +66,12 @@ class Shopper(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[None, str, ],
+                    *_args: typing.Union[None, str, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                 ) -> 'id':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                     )
             
@@ -89,12 +89,12 @@ class Shopper(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[None, str, ],
+                    *_args: typing.Union[None, str, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                 ) -> 'name':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                     )
             
@@ -112,12 +112,12 @@ class Shopper(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[None, str, ],
+                    *_args: typing.Union[None, str, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                 ) -> 'phone':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                     )
             __annotations__ = {
@@ -171,7 +171,7 @@ class Shopper(
 
     def __new__(
         cls,
-        *args: typing.Union[dict, frozendict.frozendict, None, ],
+        *_args: typing.Union[dict, frozendict.frozendict, None, ],
         id: typing.Union[MetaOapg.properties.id, None, str, schemas.Unset] = schemas.unset,
         name: typing.Union[MetaOapg.properties.name, None, str, schemas.Unset] = schemas.unset,
         phone: typing.Union[MetaOapg.properties.phone, None, str, schemas.Unset] = schemas.unset,
@@ -180,7 +180,7 @@ class Shopper(
     ) -> 'Shopper':
         return super().__new__(
             cls,
-            *args,
+            *_args,
             id=id,
             name=name,
             phone=phone,

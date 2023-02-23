@@ -213,7 +213,7 @@ class Merchant(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[dict, frozendict.frozendict, ],
+                    *_args: typing.Union[dict, frozendict.frozendict, ],
                     kycStatus: typing.Union[MetaOapg.properties.kycStatus, str, ],
                     accountType: typing.Union[MetaOapg.properties.accountType, str, ],
                     integrationStatus: typing.Union[MetaOapg.properties.integrationStatus, str, ],
@@ -224,7 +224,7 @@ class Merchant(
                 ) -> 'merchantInfo':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         kycStatus=kycStatus,
                         accountType=accountType,
                         integrationStatus=integrationStatus,
@@ -380,7 +380,7 @@ class Merchant(
                                 
                                     def __new__(
                                         cls,
-                                        *args: typing.Union[dict, frozendict.frozendict, ],
+                                        *_args: typing.Union[dict, frozendict.frozendict, ],
                                         clientId: typing.Union[MetaOapg.properties.clientId, str, ],
                                         name: typing.Union[MetaOapg.properties.name, str, ],
                                         _configuration: typing.Optional[schemas.Configuration] = None,
@@ -388,7 +388,7 @@ class Merchant(
                                     ) -> 'items':
                                         return super().__new__(
                                             cls,
-                                            *args,
+                                            *_args,
                                             clientId=clientId,
                                             name=name,
                                             _configuration=_configuration,
@@ -397,12 +397,12 @@ class Merchant(
                         
                             def __new__(
                                 cls,
-                                arg: typing.Union[typing.Tuple[typing.Union[MetaOapg.items, dict, frozendict.frozendict, ]], typing.List[typing.Union[MetaOapg.items, dict, frozendict.frozendict, ]]],
+                                _arg: typing.Union[typing.Tuple[typing.Union[MetaOapg.items, dict, frozendict.frozendict, ]], typing.List[typing.Union[MetaOapg.items, dict, frozendict.frozendict, ]]],
                                 _configuration: typing.Optional[schemas.Configuration] = None,
                             ) -> 'plugins':
                                 return super().__new__(
                                     cls,
-                                    arg,
+                                    _arg,
                                     _configuration=_configuration,
                                 )
                         
@@ -437,14 +437,14 @@ class Merchant(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[dict, frozendict.frozendict, ],
+                    *_args: typing.Union[dict, frozendict.frozendict, ],
                     plugins: typing.Union[MetaOapg.properties.plugins, list, tuple, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                     **kwargs: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, None, list, tuple, bytes],
                 ) -> 'integrationConfig':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         plugins=plugins,
                         _configuration=_configuration,
                         **kwargs,
@@ -566,7 +566,7 @@ class Merchant(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[dict, frozendict.frozendict, ],
+                    *_args: typing.Union[dict, frozendict.frozendict, ],
                     amount: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
                     blockchain: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
                     currency: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
@@ -578,7 +578,7 @@ class Merchant(
                 ) -> 'escrowConfig':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         amount=amount,
                         blockchain=blockchain,
                         currency=currency,
@@ -657,7 +657,7 @@ class Merchant(
                     
                         def __new__(
                             cls,
-                            *args: typing.Union[dict, frozendict.frozendict, ],
+                            *_args: typing.Union[dict, frozendict.frozendict, ],
                             active: typing.Union[MetaOapg.properties.active, bool, ],
                             currency: typing.Union[MetaOapg.properties.currency, str, ],
                             _configuration: typing.Optional[schemas.Configuration] = None,
@@ -665,7 +665,7 @@ class Merchant(
                         ) -> 'items':
                             return super().__new__(
                                 cls,
-                                *args,
+                                *_args,
                                 active=active,
                                 currency=currency,
                                 _configuration=_configuration,
@@ -674,12 +674,12 @@ class Merchant(
             
                 def __new__(
                     cls,
-                    arg: typing.Union[typing.Tuple[typing.Union[MetaOapg.items, dict, frozendict.frozendict, ]], typing.List[typing.Union[MetaOapg.items, dict, frozendict.frozendict, ]]],
+                    _arg: typing.Union[typing.Tuple[typing.Union[MetaOapg.items, dict, frozendict.frozendict, ]], typing.List[typing.Union[MetaOapg.items, dict, frozendict.frozendict, ]]],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                 ) -> 'cryptoAssets':
                     return super().__new__(
                         cls,
-                        arg,
+                        _arg,
                         _configuration=_configuration,
                     )
             
@@ -746,7 +746,7 @@ class Merchant(
 
     def __new__(
         cls,
-        *args: typing.Union[dict, frozendict.frozendict, ],
+        *_args: typing.Union[dict, frozendict.frozendict, ],
         cryptoLovePercentage: typing.Union[MetaOapg.properties.cryptoLovePercentage, decimal.Decimal, int, float, ],
         escrowConfig: typing.Union[MetaOapg.properties.escrowConfig, dict, frozendict.frozendict, ],
         integrationConfig: typing.Union[MetaOapg.properties.integrationConfig, dict, frozendict.frozendict, ],
@@ -758,7 +758,7 @@ class Merchant(
     ) -> 'Merchant':
         return super().__new__(
             cls,
-            *args,
+            *_args,
             cryptoLovePercentage=cryptoLovePercentage,
             escrowConfig=escrowConfig,
             integrationConfig=integrationConfig,

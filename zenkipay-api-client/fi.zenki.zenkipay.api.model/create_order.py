@@ -109,12 +109,12 @@ class CreateOrder(
             
                 def __new__(
                     cls,
-                    arg: typing.Union[typing.Tuple['Item'], typing.List['Item']],
+                    _arg: typing.Union[typing.Tuple['Item'], typing.List['Item']],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                 ) -> 'items':
                     return super().__new__(
                         cls,
-                        arg,
+                        _arg,
                         _configuration=_configuration,
                     )
             
@@ -136,12 +136,12 @@ class CreateOrder(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[None, str, ],
+                    *_args: typing.Union[None, str, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                 ) -> 'orderId':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                     )
             
@@ -160,12 +160,12 @@ class CreateOrder(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[None, str, ],
+                    *_args: typing.Union[None, str, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                 ) -> 'cartId':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                     )
         
@@ -195,13 +195,13 @@ class CreateOrder(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[dict, frozendict.frozendict, None, ],
+                    *_args: typing.Union[dict, frozendict.frozendict, None, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                     **kwargs: typing.Union[MetaOapg.additional_properties, str, ],
                 ) -> 'metadata':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                         **kwargs,
                     )
@@ -294,7 +294,7 @@ class CreateOrder(
 
     def __new__(
         cls,
-        *args: typing.Union[dict, frozendict.frozendict, ],
+        *_args: typing.Union[dict, frozendict.frozendict, ],
         countryCodeIso2: typing.Union[MetaOapg.properties.countryCodeIso2, str, ],
         breakdown: 'Breakdown',
         type: typing.Union[MetaOapg.properties.type, str, ],
@@ -309,7 +309,7 @@ class CreateOrder(
     ) -> 'CreateOrder':
         return super().__new__(
             cls,
-            *args,
+            *_args,
             countryCodeIso2=countryCodeIso2,
             breakdown=breakdown,
             type=type,

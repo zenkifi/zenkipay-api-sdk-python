@@ -227,7 +227,7 @@ class ErrorResponse(
                     
                         def __new__(
                             cls,
-                            *args: typing.Union[dict, frozendict.frozendict, ],
+                            *_args: typing.Union[dict, frozendict.frozendict, ],
                             field: typing.Union[MetaOapg.properties.field, str, ],
                             objectName: typing.Union[MetaOapg.properties.objectName, str, ],
                             message: typing.Union[MetaOapg.properties.message, str, ],
@@ -236,7 +236,7 @@ class ErrorResponse(
                         ) -> 'items':
                             return super().__new__(
                                 cls,
-                                *args,
+                                *_args,
                                 field=field,
                                 objectName=objectName,
                                 message=message,
@@ -247,12 +247,12 @@ class ErrorResponse(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[list, tuple, None, ],
+                    *_args: typing.Union[list, tuple, None, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                 ) -> 'validationErrors':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                     )
             __annotations__ = {
@@ -331,7 +331,7 @@ class ErrorResponse(
 
     def __new__(
         cls,
-        *args: typing.Union[dict, frozendict.frozendict, ],
+        *_args: typing.Union[dict, frozendict.frozendict, ],
         humanMessage: typing.Union[MetaOapg.properties.humanMessage, str, ],
         requestId: typing.Union[MetaOapg.properties.requestId, str, ],
         errorCode: typing.Union[MetaOapg.properties.errorCode, decimal.Decimal, int, ],
@@ -344,7 +344,7 @@ class ErrorResponse(
     ) -> 'ErrorResponse':
         return super().__new__(
             cls,
-            *args,
+            *_args,
             humanMessage=humanMessage,
             requestId=requestId,
             errorCode=errorCode,

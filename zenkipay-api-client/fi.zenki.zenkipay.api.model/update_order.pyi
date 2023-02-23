@@ -54,12 +54,12 @@ class UpdateOrder(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[None, str, ],
+                    *_args: typing.Union[None, str, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                 ) -> 'orderId':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                     )
             
@@ -77,12 +77,12 @@ class UpdateOrder(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[None, str, ],
+                    *_args: typing.Union[None, str, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                 ) -> 'cartId':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                     )
             
@@ -116,12 +116,12 @@ class UpdateOrder(
                         
                             def __new__(
                                 cls,
-                                *args: typing.Union[None, str, ],
+                                *_args: typing.Union[None, str, ],
                                 _configuration: typing.Optional[schemas.Configuration] = None,
                             ) -> 'id':
                                 return super().__new__(
                                     cls,
-                                    *args,
+                                    *_args,
                                     _configuration=_configuration,
                                 )
                         __annotations__ = {
@@ -154,13 +154,13 @@ class UpdateOrder(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[dict, frozendict.frozendict, None, ],
+                    *_args: typing.Union[dict, frozendict.frozendict, None, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                     **kwargs: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, None, list, tuple, bytes],
                 ) -> 'shopper':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                         **kwargs,
                     )
@@ -187,13 +187,13 @@ class UpdateOrder(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[dict, frozendict.frozendict, None, ],
+                    *_args: typing.Union[dict, frozendict.frozendict, None, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                     **kwargs: typing.Union[MetaOapg.additional_properties, str, ],
                 ) -> 'metadata':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                         **kwargs,
                     )
@@ -245,7 +245,7 @@ class UpdateOrder(
 
     def __new__(
         cls,
-        *args: typing.Union[dict, frozendict.frozendict, ],
+        *_args: typing.Union[dict, frozendict.frozendict, ],
         orderId: typing.Union[MetaOapg.properties.orderId, None, str, schemas.Unset] = schemas.unset,
         cartId: typing.Union[MetaOapg.properties.cartId, None, str, schemas.Unset] = schemas.unset,
         shopper: typing.Union[MetaOapg.properties.shopper, dict, frozendict.frozendict, None, schemas.Unset] = schemas.unset,
@@ -255,7 +255,7 @@ class UpdateOrder(
     ) -> 'UpdateOrder':
         return super().__new__(
             cls,
-            *args,
+            *_args,
             orderId=orderId,
             cartId=cartId,
             shopper=shopper,

@@ -172,12 +172,12 @@ class Order(
             
                 def __new__(
                     cls,
-                    arg: typing.Union[typing.Tuple['Item'], typing.List['Item']],
+                    _arg: typing.Union[typing.Tuple['Item'], typing.List['Item']],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                 ) -> 'items':
                     return super().__new__(
                         cls,
-                        arg,
+                        _arg,
                         _configuration=_configuration,
                     )
             
@@ -322,7 +322,7 @@ class Order(
                         
                             def __new__(
                                 cls,
-                                *args: typing.Union[dict, frozendict.frozendict, ],
+                                *_args: typing.Union[dict, frozendict.frozendict, ],
                                 to: typing.Union[MetaOapg.properties.to, str, ],
                                 value: typing.Union[MetaOapg.properties.value, decimal.Decimal, int, float, ],
                                 timestamp: typing.Union[MetaOapg.properties.timestamp, decimal.Decimal, int, ],
@@ -332,7 +332,7 @@ class Order(
                             ) -> 'exchangeRate':
                                 return super().__new__(
                                     cls,
-                                    *args,
+                                    *_args,
                                     to=to,
                                     value=value,
                                     timestamp=timestamp,
@@ -433,7 +433,7 @@ class Order(
                         
                             def __new__(
                                 cls,
-                                *args: typing.Union[dict, frozendict.frozendict, ],
+                                *_args: typing.Union[dict, frozendict.frozendict, ],
                                 discountPercentage: typing.Union[MetaOapg.properties.discountPercentage, decimal.Decimal, int, float, ],
                                 finalAmount: typing.Union[MetaOapg.properties.finalAmount, decimal.Decimal, int, float, ],
                                 discountAmount: typing.Union[MetaOapg.properties.discountAmount, decimal.Decimal, int, float, ],
@@ -443,7 +443,7 @@ class Order(
                             ) -> 'cryptoLove':
                                 return super().__new__(
                                     cls,
-                                    *args,
+                                    *_args,
                                     discountPercentage=discountPercentage,
                                     finalAmount=finalAmount,
                                     discountAmount=discountAmount,
@@ -501,13 +501,13 @@ class Order(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[dict, frozendict.frozendict, None, ],
+                    *_args: typing.Union[dict, frozendict.frozendict, None, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                     **kwargs: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, None, list, tuple, bytes],
                 ) -> 'paymentInfo':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                         **kwargs,
                     )
@@ -590,7 +590,7 @@ class Order(
                         
                             def __new__(
                                 cls,
-                                *args: typing.Union[dict, frozendict.frozendict, ],
+                                *_args: typing.Union[dict, frozendict.frozendict, ],
                                 finalAmount: typing.Union[MetaOapg.properties.finalAmount, str, ],
                                 currency: typing.Union[MetaOapg.properties.currency, str, ],
                                 _configuration: typing.Optional[schemas.Configuration] = None,
@@ -598,7 +598,7 @@ class Order(
                             ) -> 'cryptoSettlement':
                                 return super().__new__(
                                     cls,
-                                    *args,
+                                    *_args,
                                     finalAmount=finalAmount,
                                     currency=currency,
                                     _configuration=_configuration,
@@ -634,13 +634,13 @@ class Order(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[dict, frozendict.frozendict, None, ],
+                    *_args: typing.Union[dict, frozendict.frozendict, None, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                     **kwargs: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, None, list, tuple, bytes],
                 ) -> 'settlementInfo':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                         **kwargs,
                     )
@@ -667,13 +667,13 @@ class Order(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[dict, frozendict.frozendict, None, ],
+                    *_args: typing.Union[dict, frozendict.frozendict, None, ],
                     _configuration: typing.Optional[schemas.Configuration] = None,
                     **kwargs: typing.Union[MetaOapg.additional_properties, str, ],
                 ) -> 'metadata':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         _configuration=_configuration,
                         **kwargs,
                     )
@@ -786,7 +786,7 @@ class Order(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[dict, frozendict.frozendict, ],
+                    *_args: typing.Union[dict, frozendict.frozendict, ],
                     createdAt: typing.Union[MetaOapg.properties.createdAt, decimal.Decimal, int, ],
                     status: typing.Union[MetaOapg.properties.status, str, ],
                     resolutionRequestType: typing.Union[MetaOapg.properties.resolutionRequestType, str, schemas.Unset] = schemas.unset,
@@ -796,7 +796,7 @@ class Order(
                 ) -> 'dispute':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         createdAt=createdAt,
                         status=status,
                         resolutionRequestType=resolutionRequestType,
@@ -834,12 +834,12 @@ class Order(
                         
                             def __new__(
                                 cls,
-                                *args: typing.Union[None, str, ],
+                                *_args: typing.Union[None, str, ],
                                 _configuration: typing.Optional[schemas.Configuration] = None,
                             ) -> 'reason':
                                 return super().__new__(
                                     cls,
-                                    *args,
+                                    *_args,
                                     _configuration=_configuration,
                                 )
                         
@@ -915,7 +915,7 @@ class Order(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[dict, frozendict.frozendict, ],
+                    *_args: typing.Union[dict, frozendict.frozendict, ],
                     createdAt: typing.Union[MetaOapg.properties.createdAt, decimal.Decimal, int, ],
                     zenkiClaimId: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
                     status: typing.Union[MetaOapg.properties.status, str, ],
@@ -925,7 +925,7 @@ class Order(
                 ) -> 'claim':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         createdAt=createdAt,
                         zenkiClaimId=zenkiClaimId,
                         status=status,
@@ -994,14 +994,14 @@ class Order(
                         
                             def __new__(
                                 cls,
-                                *args: typing.Union[dict, frozendict.frozendict, ],
+                                *_args: typing.Union[dict, frozendict.frozendict, ],
                                 href: typing.Union[MetaOapg.properties.href, str, ],
                                 _configuration: typing.Optional[schemas.Configuration] = None,
                                 **kwargs: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, None, list, tuple, bytes],
                             ) -> 'refund':
                                 return super().__new__(
                                     cls,
-                                    *args,
+                                    *_args,
                                     href=href,
                                     _configuration=_configuration,
                                     **kwargs,
@@ -1034,14 +1034,14 @@ class Order(
             
                 def __new__(
                     cls,
-                    *args: typing.Union[dict, frozendict.frozendict, None, ],
+                    *_args: typing.Union[dict, frozendict.frozendict, None, ],
                     refund: typing.Union[MetaOapg.properties.refund, dict, frozendict.frozendict, schemas.Unset] = schemas.unset,
                     _configuration: typing.Optional[schemas.Configuration] = None,
                     **kwargs: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, None, list, tuple, bytes],
                 ) -> '_links':
                     return super().__new__(
                         cls,
-                        *args,
+                        *_args,
                         refund=refund,
                         _configuration=_configuration,
                         **kwargs,
@@ -1202,7 +1202,7 @@ class Order(
 
     def __new__(
         cls,
-        *args: typing.Union[dict, frozendict.frozendict, ],
+        *_args: typing.Union[dict, frozendict.frozendict, ],
         createdAt: typing.Union[MetaOapg.properties.createdAt, decimal.Decimal, int, ],
         countryCodeIso2: typing.Union[MetaOapg.properties.countryCodeIso2, str, ],
         zenkiOrderId: typing.Union[MetaOapg.properties.zenkiOrderId, str, ],
@@ -1226,7 +1226,7 @@ class Order(
     ) -> 'Order':
         return super().__new__(
             cls,
-            *args,
+            *_args,
             createdAt=createdAt,
             countryCodeIso2=countryCodeIso2,
             zenkiOrderId=zenkiOrderId,
