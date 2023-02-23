@@ -53,7 +53,7 @@ class TokenOAuth2(
             
             
                 class MetaOapg:
-                    max_length = 1024
+                    max_length = 2048
             tokenType = schemas.StrSchema
             expiresIn = schemas.IntSchema
             __annotations__ = {
